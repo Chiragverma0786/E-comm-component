@@ -1,0 +1,8 @@
+.pillars{
+    position: relative;
+    display: flex;
+    /* height: 10vh; */
+    width: 16px;
+    /* background-color: blue; */
+    border-radius: 5px;
+}

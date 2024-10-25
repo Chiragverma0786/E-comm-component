@@ -1,0 +1,39 @@
+.data{
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.data-icon{
+    position: relative;
+    display: flex;
+    height: 50%;
+    width: 2vw;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.data-paisa{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.data-paisa h1{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.data-paisa p{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: rgb(124, 126, 135);
+}

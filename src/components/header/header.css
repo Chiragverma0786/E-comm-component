@@ -1,0 +1,106 @@
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 93%;
+    padding: 0 4px;
+    /* border: 2px solid red; */
+}
+
+.search{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 10%;
+    /* border: 2px solid red; */
+}
+
+.search p{
+    position: relative;
+    font-family: sans-serif;
+    color: grey;
+}
+
+.srch-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    transition: all ease-in-out 0.2s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.srch-icon:hover{
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.294);
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    gap: 9px;
+}
+
+.lan, .mode, .star, .bell{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    transition: all ease-in-out 0.2s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.lan:hover,.mode:hover, .star:hover, .bell:hover{
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.294);
+} 
+
+.profile{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 2rem;
+    /* object-fit: cover; */
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .menu-icon{
+        display: flex;
+    }
+
+    .search{
+        gap: 3vw;
+        padding-left: 14px;
+    }
+
+    .search p{
+        display: none;
+    }
+}
