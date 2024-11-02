@@ -3,7 +3,7 @@ import './App.css'
 import Header from './components/header/header'
 import Dash from './components/dash icons/dash'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faFileLines, faBagShopping, faUserGraduate, faCar, faEnvelope, faComment, faCalendar, faUser, faLock, faRobot, faTruck, faGaugeSimple, faClock, faX, faCircleDollarToSlot, faEllipsisVertical, faCreditCard, faChartPie, faChevronUp, faChevronDown, faCartShopping
+import { faHouse, faFileLines, faBagShopping, faUserGraduate, faCar, faEnvelope, faComment, faCalendar, faUser, faLock, faRobot, faTruck, faGaugeSimple, faClock, faX, faCircleDollarToSlot, faEllipsisVertical, faCreditCard, faChartPie, faChevronUp, faChevronDown, faCartShopping, faCheck
   } from '@fortawesome/free-solid-svg-icons'
 import { width } from '@fortawesome/free-brands-svg-icons/fa42Group'
 import dummy from '/src/assets/dummy1.png'
@@ -12,6 +12,7 @@ import Data from './components/data/data'
 import Trs from './components/transaction/trs'
 import { faAmazonPay, faGooglePay, faPaypal } from '@fortawesome/free-brands-svg-icons'
 import Pillar from './components/pillars/pillar'
+import Id from './components/Id/Id'
 
 const App = () => {
   const [normal, setNormal] = useState("-70%")
@@ -364,6 +365,54 @@ const App = () => {
                 <div className="two-main"></div>
               </div>
               <div className="tc2-three"></div>
+            </div>
+          </div>
+
+          {/* Fourth Container */}
+          <div className="fourth-container">
+            <div className="fourth-left">
+              <div className="fourth-title1">
+                <div className="person-id">
+                  <div className="id-no">
+                    <h2>#ID</h2>
+                  </div>
+                  <div className="status">
+                    <h2>STATUS</h2>
+                  </div>
+                  <div className="client">
+                    <h2>CLIENT</h2>
+                  </div>
+                </div>
+                <div className="person-balance">
+                <div className="cl-total">
+                    <h2>TOTAL</h2>
+                  </div>
+                  <div className="cl-balance">
+                    <h2>BALANCE</h2>
+                  </div>
+                </div>
+              </div>
+              <div className="fourth-dis1">
+                <Id idNo={"#4987"} statusIcon={faCheck} clientLogo={"JN"} clientName={"Jones Niklodean"} clientEmail={"jonesnik@gmail.com"} totalAmount={"$3456"} balance={"$234"} statusColor={"green"} statusbgColor={'rgb(228, 246, 214)'} clientColor={"grey"} clientbgColor={'rgb(240, 239, 240)'}/>
+
+                <Id idNo={"#4987"} statusIcon={faEnvelope} clientLogo={"AJ"} clientName={"Amanda Jones"} clientEmail={"jonesnik@gmail.com"} totalAmount={"$3456"} balance={"$234"} statusColor={"rgb(153, 106, 255)"} statusbgColor={'rgb(237, 228, 255)'} clientColor={"grey"} clientbgColor={'rgb(240, 239, 240)'}/>
+
+                <Id idNo={"#4987"} statusIcon={faCheck} clientLogo={"CR"} clientName={"Cristiano Ronaldo"} clientEmail={"jonesnik@gmail.com"} totalAmount={"$3456"} balance={"$234"} statusColor={"green"} statusbgColor={'rgb(228, 246, 214)'} clientColor={"grey"} clientbgColor={'rgb(240, 239, 240)'}/>
+
+                <Id idNo={"#4987"} statusIcon={faCheck} clientLogo={"WS"} clientName={"Will Smith"} clientEmail={"jonesnik@gmail.com"} totalAmount={"$3456"} balance={"$234"} statusColor={"green"} statusbgColor={'rgb(228, 246, 214)'} clientColor={"grey"} clientbgColor={'rgb(240, 239, 240)'}/>
+
+                <Id idNo={"#4987"} statusIcon={faCheck} clientLogo={"KM"} clientName={"kriss Marton"} clientEmail={"jonesnik@gmail.com"} totalAmount={"$3456"} balance={"$234"} statusColor={"green"} statusbgColor={'rgb(228, 246, 214)'} clientColor={"grey"} clientbgColor={'rgb(240, 239, 240)'}/>
+
+                <Id idNo={"#4987"} statusIcon={faCheck} clientLogo={"MJ"} clientName={"Micheal Jons"} clientEmail={"jonesnik@gmail.com"} totalAmount={"$3456"} balance={"$234"} statusColor={"green"} statusbgColor={'rgb(228, 246, 214)'} clientColor={"grey"} clientbgColor={'rgb(240, 239, 240)'}/>
+
+                <Id idNo={"#4987"} statusIcon={faEnvelope} clientLogo={"KP"} clientName={"Kevin Paton"} clientEmail={"jonesnik@gmail.com"} totalAmount={"$3456"} balance={"$234"} statusColor={"rgb(153, 106, 255)"} statusbgColor={'rgb(237, 228, 255)'} clientColor={"grey"} clientbgColor={'rgb(240, 239, 240)'}/>
+
+                <Id idNo={"#4987"} statusIcon={faCheck} clientLogo={"DF"} clientName={"David Flaros"} clientEmail={"jonesnik@gmail.com"} totalAmount={"$3456"} balance={"$234"} statusColor={"green"} statusbgColor={'rgb(228, 246, 214)'} clientColor={"grey"} clientbgColor={'rgb(240, 239, 240)'}/>
+              </div>
+            </div>
+            <div className="fourth-right">
+              <div className="fourth-title2"></div>
+              <div className="fourth-dis2"></div>
             </div>
           </div>
         </div>
