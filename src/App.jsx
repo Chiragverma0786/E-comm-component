@@ -13,6 +13,14 @@ import Trs from './components/transaction/trs'
 import { faAmazonPay, faGooglePay, faPaypal } from '@fortawesome/free-brands-svg-icons'
 import Pillar from './components/pillars/pillar'
 import Id from './components/Id/Id'
+import Meeting from './components/meeting/meeting'
+
+import meet1 from '/src/assets/meet1.png'
+import meet2 from '/src/assets/meet2.png'
+import meet3 from '/src/assets/meet3.png'
+import meet4 from '/src/assets/meet4.png'
+import meet5 from '/src/assets/meet5.png'
+import meet6 from '/src/assets/profile.png'
 
 const App = () => {
   const [normal, setNormal] = useState("-70%")
@@ -411,8 +419,35 @@ const App = () => {
               </div>
             </div>
             <div className="fourth-right">
-              <div className="fourth-title2"></div>
-              <div className="fourth-dis2"></div>
+            <div className="tc1-title">
+                  <h2>Meeting Schedule</h2>
+                  <div className="three-dots">
+                  <FontAwesomeIcon icon={faEllipsisVertical} style={{
+                  cursor: 'pointer'
+                }} />
+                  </div>
+                </div>
+              <div className="fourth-dis2">
+                <Meeting meetIcon={meet1} meetHead={"Call with Woods"}
+                meetTitle="
+21 Jul | 08:20-10:30" buttonName={"Business"} lastbgColor={"rgb(237, 228, 255)"} lastColor={"rgb(165, 124, 255)"}/>
+                <Meeting meetIcon={meet2} meetHead={"Call with Hina"}
+                meetTitle="
+24 Jul | 08:20-10:30" buttonName={"Meditation"} lastbgColor={"rgb(228, 246, 214)"} lastColor={"rgb(128, 215, 64)"}/>
+                <Meeting meetIcon={meet3} meetHead={"Call with Jack"}
+                meetTitle="
+25 Jul | 08:20-10:30" buttonName={"Dinner"} lastbgColor={"rgb(255, 243, 214)"} lastColor={"rgb(255, 185, 19)"}/>
+                <Meeting meetIcon={meet4} meetHead={"Call with Simon"}
+                meetTitle="
+28 Jul | 08:20-10:30" buttonName={"Meetup"} lastbgColor={"rgb(236, 237, 238)"} lastColor={"rgb(144, 147, 153)"}/>
+                <Meeting meetIcon={meet5} meetHead={"Call with Jiya"}
+                meetTitle="
+3 Aug | 08:20-10:30" buttonName={"Business"} lastbgColor={"rgb(237, 228, 255)"} lastColor={"rgb(165, 124, 255)"}/>
+                <Meeting meetIcon={meet6} meetHead={"Call with Chirag"}
+                meetTitle="
+7 Aug | 08:20-10:30" buttonName={"Resort"} lastbgColor={"rgb(255, 226, 227)"} lastColor={"rgb(255, 98, 102)"}/>
+                
+              </div>
             </div>
           </div>
         </div>

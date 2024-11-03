@@ -8,7 +8,7 @@ const Dash = ({faltu, icon,styling}) => {
     <div className="icon" style={{
       backgroundColor: styling
       }}>
-        <div className="one">
+        <div className="one"> 
         <div className="font-icon">
         <FontAwesomeIcon icon={icon} style={{color: "rgb(140, 87, 255)",
           fontSize: "18px",

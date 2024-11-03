@@ -2,7 +2,7 @@ import React from 'react'
 import './Id.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Id = ({idNo, statusIcon, statusColor, statusbgColor, clientLogo, clientColor, clientbgColor, clientName, clientEmail, totalAmount, balance}) => {
+const Id = ({idNo, statusIcon, statusColor, statusbgColor, clientLogo, clientColor, clientbgColor,  clientName, clientEmail, totalAmount, balance}) => {
   return (
     <div className="id1">
                 <div className="id-no1">
